@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  background-color: black;
+}
+
+.container {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.container span {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.container span img {
+  height: 200px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.btn {
+  position: relative;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.btn button {
+    position: absolute;
+  height: 40px;
+  width: 100px;
+  color: white;
+  background-color: rgb(18, 11, 65);
+  border: none;
+  border-radius: 5px;
+  margin-top: 120px;
+}
+
+.btn button:hover {
+  cursor: pointer;
+  filter: brightness(1.7);
+}
+
+.btn #preview {
+    left: 100px;
+}
+
+.btn #next {
+    right: 100px;
+}
