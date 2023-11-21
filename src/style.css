@@ -40,12 +40,12 @@ body {
 }
 
 @media (max-width: 550px) {
-  .btn button {
+  .btn-container button {
     gap: 20%;
   }
 }
 
-.btn button {
+.btn-container button {
   position: absolute;
   height: 40px;
   width: 100px;
@@ -56,15 +56,15 @@ body {
   margin-top: 120px;
 }
 
-.btn button:hover {
+.btn-container button:hover {
   cursor: pointer;
   filter: brightness(1.7);
 }
 
-.btn #preview {
+.btn-container #preview {
   left: 100px;
 }
 
-.btn #next {
+.btn-container #next {
   right: 100px;
 }
