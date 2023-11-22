@@ -1,4 +1,4 @@
-let imageConteinerEl = document.querySelector(".container");
+let imageConteinerEl = document.querySelector(".container-image");
 let previewEl = document.querySelector("#preview");
 let nextEl = document.querySelector("#next");
 
