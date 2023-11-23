@@ -1,15 +1,19 @@
 body {
+  background-color: black !important;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   text-align: center;
   align-items: center;
   margin: 0;
   justify-content: center;
-  background-color: black;
 }
 
-.container {
+.container-image {
   height: 200px;
   width: 200px;
   position: relative;
@@ -18,7 +22,7 @@ body {
   transition: transform 0.7s;
 }
 
-.container span {
+.container-image span {
   top: 0;
   left: 0;
   width: 100%;
@@ -26,47 +30,47 @@ body {
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
 }
 
-.container span img {
+.container-image span img {
   width: 100%;
   height: 150px;
   top: 0;
   left: 0;
   position: absolute;
 }
-
-.btn-container {
-  position: relative;
+.button-container{
   width: 80%;
+  height: 50px;
+  margin-top: 100px;
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-@media (max-width: 550px) {
-  .btn-container button {
-    gap: 200px!;
+@media (max-width: 420px) {
+  .button-container {
+    gap: 50px ;
   }
 }
 
-.btn-container button {
-  position: absolute;
+.button-container button {
   height: 40px;
   width: 100px;
   color: white;
   background-color: rgb(18, 11, 65);
   border: none;
-  border-radius: 5px;
-  margin-top: 120px;
+  border-radius: 5px; 
+  
 }
 
-.btn-container button:hover {
+.button-container button:hover {
   cursor: pointer;
   filter: brightness(1.7);
 }
 
-.btn-container #preview {
-  left: 100px;
-}
 
-.btn-container #next {
-  right: 100px;
-}
+
+
+
+
+
